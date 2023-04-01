@@ -11,8 +11,8 @@ program to generate random numbers for mega millions
 import random
 
 # define range
-min = 1
-max = 70
+min_white = 1
+max_white = 70
 
 # set of numbers, list of numbers
 nums_set = set()
@@ -20,7 +20,7 @@ nums_list = []
 
 # generate 5 numbers
 while len(nums_set) < 5:
-    num = random.randint(min, max)
+    num = random.randint(min_white, max_white)
     nums_set.add(num)
 
 # set to list
