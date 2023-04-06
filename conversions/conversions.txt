@@ -1,0 +1,18 @@
+conversion app
+
+references
+https://www.angelo.edu/departments/agriculture/faculty/scott_conversions.php
+https://www.austincc.edu/pintutor/pin_mh/_source/Handouts/Units/Common_Unit_Conversions.pdf
+
+temperature: C, F, K
+
+weight: ton, kg, lbs, oz, g, mg
+
+length: mile, yard, ft, m, km, in, cm, mm
+
+area: sq mile, acre, sq km, hectares, sq ft, sq m
+
+capacity: gallon, quarts, pints, cups, liters, ml
+
+
+

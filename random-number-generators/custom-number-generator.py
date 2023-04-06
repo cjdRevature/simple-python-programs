@@ -17,6 +17,7 @@ min_white = int(input("Enter minimum number: "))
 max_white = int(input("Enter maximum number: "))
 num_balls = int(input("Enter number of balls: "))
 
+
 # define range for gold ball
 print()
 print("******************************")
