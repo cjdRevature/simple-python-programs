@@ -2,7 +2,7 @@
 """
 Created on Mon Jan  2 11:40:49 2023
 
-@author: colli
+@author: collin
 """
 
 class ArrayList:
