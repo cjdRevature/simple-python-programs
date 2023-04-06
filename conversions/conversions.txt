@@ -3,8 +3,21 @@ conversion app
 references
 https://www.angelo.edu/departments/agriculture/faculty/scott_conversions.php
 https://www.austincc.edu/pintutor/pin_mh/_source/Handouts/Units/Common_Unit_Conversions.pdf
+https://www.thoughtco.com/convert-fahrenheit-to-kelvin-609231
 
 temperature: C, F, K
+	- F to C: 
+	   C = (F - 32) * (5/9)
+	- F to K:
+	   K = (F - 32) * (5/9) + 273.15 or K = (F + 459.67) * (5/9)
+	- C to F:
+	   F = (9/5) * C + 32 or F = (1.8 * C) + 32 
+	- C to K:
+	   K = C + 273.15
+	- K to C:
+	   C = K - 273.15
+	- K to F:
+	   F = (9/5) * (K - 273.15) + 32 or F = 1.8 * (K - 273.15) + 32
 
 weight: ton, kg, lbs, oz, g, mg
 
@@ -13,6 +26,8 @@ length: mile, yard, ft, m, km, in, cm, mm
 area: sq mile, acre, sq km, hectares, sq ft, sq m
 
 capacity: gallon, quarts, pints, cups, liters, ml
+
+
 
 
 
