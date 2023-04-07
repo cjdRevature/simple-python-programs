@@ -21,7 +21,71 @@ temperature: C, F, K
 
 weight: ton, kg, lbs, oz, g, mg
 
-length: mile, yard, ft, m, km, in, cm, mm
+length: mi, yard, ft, m, km, in, cm, mm
+
+	- mm to cm: cm = mm / 10
+	- mm to in: in = mm / 25.4
+	- mm to ft: ft = mm / 304.8
+	- mm to m: m = mm / 1000
+	- mm to yard: yard = mm * 0.0010936133
+	- mm to km: km = mm / 1,000,000
+	- mm to mile: mi = mm / 1,609,344
+
+	- cm to mm: mm = cm * 10
+	- cm to in: in = cm / 2.54 
+	- cm to ft: ft = cm * 0.0328
+	- cm to m: m = cm / 100
+	- cm to yard: yard = cm * 0.010936133
+	- cm to km: km = cm / 100,000
+	- cm to mi: mi = cm * 0.0000062137
+
+	- in to mm: mm = in * 25.4
+	- in to cm: cm = in * 2.54
+	- in to ft: ft = in / 12
+	- in to yards: yards = in / 36
+	- in to m: m = in / 39.37
+	- in to km: km = in / 39,370
+	- in to mi: mi = in / 63,360
+
+	- ft to mm: mm = ft * 304.8
+	- ft to cm: cm = ft * 30.48
+	- ft to in: in = ft * 12
+	- ft to yards: yards = ft / 3
+	- ft to m: m = ft / 3.281
+	- ft to km: km = ft / 3281
+	- ft to mi: mi = ft / 5280
+
+	- yards to mm: mm = yards * 914.4
+	- yards to cm: cm = yards * 91.44
+	- yards to in: in = yards * 36
+	- yards to ft: ft = yards * 3
+	- yards to m: m = yards / 1.094
+	- yards to km: km = yards / 1094
+	- yards to mi: mi = yards / 1760
+
+	- m to mm: mm = m * 1000
+	- m to cm: cm = m * 100
+	- m to in: in = m * 39.37
+	- m to ft: ft = m * 3.281
+	- m to yards: yards = m * 1.094
+	- m to km: km = m / 1000
+	- m to mi: mi = m / 1609
+
+	- km to mm: mm = km * 1,000,000
+	- km to cm: cm = km * 100,000
+	- km to in: in = km * 39,370
+	- km to ft: in = km * 3281
+	- km to yards: yards = km * 1094
+	- km to m: m = km * 1000
+	- km to mi: mi = km / 1.609
+
+	- miles to mm: mm = m * 1,609,344
+	- miles to cm: cm = mi * 160,934
+	- miles to in: in = mi * 63,360
+	- miles to ft: ft = mi * 5280
+	- miles to yards: yards = mi * 1760
+	- miles to m: m = mi * 1609.34
+	- miles to km: km = mi * 1.60934
 
 area: sq mile, acre, sq km, hectares, sq ft, sq m
 
@@ -31,3 +95,16 @@ capacity: gallon, quarts, pints, cups, liters, ml
 
 
 
+1 mile = 5,280 ft = 1,760 yards = 1,609.34 m = 1.609 km
+
+1 ft = 12 inches = 0.305 m = 30.48 cm
+
+1 inch = 2.54 cm = 25.4 mm
+
+1 km = 1,000 m = 0.621 miles
+
+1 m = 39.37 inches = .3281 ft = 1.094 yards
+
+1 cm = 10 mm = 0.394 inches
+
+1 mm = 0.04 inches
