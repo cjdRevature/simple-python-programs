@@ -6,20 +6,64 @@ https://www.austincc.edu/pintutor/pin_mh/_source/Handouts/Units/Common_Unit_Conv
 https://www.thoughtco.com/convert-fahrenheit-to-kelvin-609231
 
 temperature: C, F, K
-	- F to C: 
-	   C = (F - 32) * (5/9)
-	- F to K:
-	   K = (F - 32) * (5/9) + 273.15 or K = (F + 459.67) * (5/9)
-	- C to F:
-	   F = (9/5) * C + 32 or F = (1.8 * C) + 32 
-	- C to K:
-	   K = C + 273.15
-	- K to C:
-	   C = K - 273.15
-	- K to F:
-	   F = (9/5) * (K - 273.15) + 32 or F = 1.8 * (K - 273.15) + 32
+	- F to C: C = (F - 32) * (5/9)
+	- F to K: K = (F - 32) * (5/9) + 273.15 or K = (F + 459.67) * (5/9)
+	- C to F: F = (9/5) * C + 32 or F = (1.8 * C) + 32 
+	- C to K: K = C + 273.15
+	- K to C: C = K - 273.15
+	- K to F: F = (9/5) * (K - 273.15) + 32 or F = 1.8 * (K - 273.15) + 32
 
-weight: ton, kg, lbs, oz, g, mg
+weight: ton, stone, kg, lbs, oz, g, mg
+
+	- mg to g: g = mg / 1000 
+	- mg to oz: oz = mg / 28350
+	- mg to lbs: lbs = mg / 453600
+	- mg to kg: kg = mg / 1e+6 or mg / 1,000,000
+	- mg to stone: stone = mg / 6,350,000
+	- mg to ton: ton = mg / 907,200,000
+
+	- g to mg: mg = g * 1000
+	- g to oz: oz = g / 28.35
+	- g to lbs: lbs = g / 453.592
+	- g to kg: kg = g / 1000
+	- g to stone: stone = g / 6350.293
+	- g to ton: ton = g / 907200
+
+	- oz to mg: mg = oz * 28349.523
+	- oz to g: g = oz * 28.35
+	- oz to lbs: lbs = oz / 16
+	- oz to kg: kg = oz / 35.274
+	- oz to stone: stone = oz / 224
+	- oz to ton: ton = oz / 32000
+
+	- lbs to mg: mg = lbs * 453592
+	- lbs to g: g = lbs * 453.592
+	- lbs to oz: oz = lbs * 16
+	- lbs to kg: kg = lbs / 2.205
+	- lbs to stone: stone = lbs / 14
+	- lbs to ton: ton = lbs / 2000
+
+	- kg to mg: mg = kg * 1e+6 or kg * 1,000,000
+	- kg to g: g = kg * 1000
+	- kg to oz: oz = kg * 35.274
+	- kg to lbs: lbs = kg * 2.205
+	- kg to stone: stone = kg * 0.157
+	- kg to ton: ton = kg / 907.2
+
+	- stone to mg: mg = stone * 6,350,290
+	- stone to g: g = stone * 6350.29
+	- stone to oz: oz = stone * 224
+	- stone to lbs: lbs = stone * 14
+	- stone to kg: kg = stone * 6.35029
+	- stone to ton: ton = stone / 142.9
+
+	- ton to mg: mg = ton * 907200000
+	- ton to g: g = ton * 907185
+	- ton to oz: oz = ton * 32000
+	- ton to lbs: lbs = ton * 2000
+	- ton to kg: kg = ton * 907.185
+	- ton to stone: stone = ton * 142.857
+	
 
 length: mi, yard, ft, m, km, in, cm, mm
 
@@ -88,6 +132,43 @@ length: mi, yard, ft, m, km, in, cm, mm
 	- miles to km: km = mi * 1.60934
 
 area: sq mile, acre, sq km, hectares, sq ft, sq m
+
+        - sq ft to sq m: sq m = sq ft / 10.764                      
+        - sq ft to acre: acre = sq ft / 43560   
+        - sq ft to hectare: hectare = sq ft / 107639
+        - sq ft to sq km: sq km = sq ft / 1.076e+7 or sq ft / 10,763,910       
+        - sq ft to sq mile: sq mile = sq ft / 2.788e+7 or sq ft / 27,878,400
+
+        - sq m to sq ft: sq ft = sq m * 10.764
+        - sq m to acre: acre = sq m / 4047
+        - sq m to hectare: hectare = sq m / 10000
+        - sq m to sq km: sq km = sq m / 1e+6 or sq m / 1,000,000
+        - sq m to sq mile: sq mile = sq m / 2.59e+6 or sq m / 2,589,988
+
+        - acre to sq ft: sq ft = acre * 43,560
+        - acre to sq m: sq m = acre * 4047
+        - acre to hectare: hectare = acre / 2.471
+        - acre to sq km: sq km = acre / 247.105
+        - acre to sq mile: sq mile = acre / 640
+
+        - hectare to sq ft: sq ft = hectare * 107639.105
+        - hectare to sq m: sq m = hectare * 10000
+        - hectare to acre: acre = hectare * 2.471
+        - hectare to sq km: sq km = hectare / 100
+        - hectare to sq mile: sq mile = hectare / 259
+
+        - sq km to sq ft: sq ft = sq km * 10763910.41671
+        - sq km to sq m: sq m = sq km * 1e+6 or sq km * 1,000,000
+        - sq km to acre: acre = sq km * 247.1053814672
+        - sq km to hectare: hectare = sq km * 100      
+        - sq km to sq mile: sq mile = sq km / 2.59
+
+        - sq mile to sq ft: sq ft = sq mile * 2.788e+7 or sq mile * 27,878,400
+        - sq mile to sq m: sq m = sq mile * 2.59e+6 or sq mile * 2,589,988
+        - sq mile to acre: acre = sq mile * 640
+        - sq mile to hectare: hectare = sq mile * 258.999
+        - sq mile to sq km: sq km = sq mile * 2.59
+        
 
 capacity: gallon, quarts, pints, cups, liters, ml
 

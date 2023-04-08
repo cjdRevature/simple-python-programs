@@ -6,7 +6,7 @@ Created on Thu Apr  6 18:17:03 2023
 """
 
 def convert_temp(num, unit):
-    if not type(num) == int or type(num) == float:
+    if not isinstance(num, (int, float)):
         print("Please enter a valid number")
         return
     
@@ -42,7 +42,7 @@ def convert_temp(num, unit):
         print("Please add a valid number/unit")
         
 def convert_length(num, unit):
-    if not type(num) == int or type(num) == float:
+    if not isinstance(num, (int, float)):
         print("Please enter a valid number")
         return
     
@@ -234,6 +234,265 @@ def convert_length(num, unit):
     else:
         print("Please enter a valid unit")
 
+def convert_weight(num, unit):
+    if not isinstance(num, (int, float)):
+        print("Please enter a valid number")
+        return
+    
+    print("******************************")
+    if unit.lower() == "mg":
+        # mg to g: g = mg / 1000
+        g = num / 1000
+        # mg to oz: oz = mg / 28350
+        oz = num / 28350
+        # mg to lbs: lbs = mg / 453600
+        lbs = num / 453600
+        # mg to kg: kg = mg / 1e+6 or mg / 1,000,000
+        kg = num / 1000000
+        # mg to stone: stone = mg / 6,350,000
+        stone = num / 6350000
+        # mg to ton: ton = mg / 907,200,000
+        ton = num / 907200000
+        print(f"{num} milligram(s) is {g:.6f} grams")
+        print(f"{num} milligram(s) is {oz:.9f} ounces")
+        print(f"{num} milligram(s) is {lbs:.9f} pounds")
+        print(f"{num} milligram(s) is {kg:.9f} kilograms")
+        print(f"{num} milligram(s) is {stone:.9f} stone")
+        print(f"{num} milligram(s) is {ton:.12f} tons")
+        print("******************************")
+    elif unit.lower() == "g":
+        # g to mg: mg = g * 1000
+        mg = num * 1000
+        # g to oz: oz = g / 28.35
+        oz = num / 28.35
+        # g to lbs: lbs = g / 453.592
+        lbs = num / 453.592
+        # g to kg: kg = g / 1000
+        kg = num / 1000
+        # g to stone: stone = g / 6350.293
+        stone = num / 6350.293
+        # g to ton: ton = g / 907200
+        ton = num / 907200
+        print(f"{num} gram(s) is {mg:.2f} milligrams")
+        print(f"{num} gram(s) is {oz:.6f} ounces")
+        print(f"{num} gram(s) is {lbs:.6f} pounds")
+        print(f"{num} gram(s) is {kg:.6f} kilograms")
+        print(f"{num} gram(s) is {stone:.6f} stone")
+        print(f"{num} gram(s) is {ton:.9f} tons")
+        print("******************************")     
+    elif unit.lower() == "oz":
+        # oz to mg: mg = oz * 28349.523
+        mg = num * 28349.523
+        # oz to g: g = oz * 28.35
+        g = num * 28.35
+        # oz to lbs: lbs = oz / 16
+        lbs = num / 16
+        # oz to kg: kg = oz / 35.274
+        kg = num / 35.274
+        # oz to stone: stone = oz / 224
+        stone = num / 224
+        # oz to ton: ton = oz / 32000
+        ton = num / 32000
+        print(f"{num} ounce(s) is {mg:.2f} milligrams")
+        print(f"{num} ounce(s) is {g:.2f} grams")
+        print(f"{num} ounce(s) is {lbs:.6f} pounds")
+        print(f"{num} ounce(s) is {kg:.6f} kilograms")
+        print(f"{num} ounce(s) is {stone:.6f} stone")
+        print(f"{num} ounce(s) is {ton:.9f} tons")
+        print("******************************")  
+    elif unit.lower() == "lbs":
+        # lbs to mg: mg = lbs * 453592
+        mg = num * 453592
+        # lbs to g: g = lbs * 453.592
+        g = num * 453.592
+        # lbs to oz: oz = lbs * 16
+        oz = num * 16
+        # lbs to kg: kg = lbs / 2.205
+        kg = num / 2.205
+        # lbs to stone: stone = lbs / 14
+        stone = num / 14
+        # lbs to ton: ton = lbs / 2000
+        ton = num / 2000
+        print(f"{num} pound(s) is {mg:.2f} milligrams")
+        print(f"{num} pound(s) is {g:.2f} grams")
+        print(f"{num} pound(s) is {oz:.2f} ounces")
+        print(f"{num} pound(s) is {kg:.6f} kilograms")
+        print(f"{num} pound(s) is {stone:.6f} stone")
+        print(f"{num} pound(s) is {ton:.9f} tons")
+        print("******************************")
+    elif unit.lower() == "kg":
+        # kg to mg: mg = kg * 1e+6 or kg * 1,000,000
+        mg = num * 1000000
+        # kg to g: g = kg * 1000
+        g = num * 1000
+        # kg to oz: oz = kg * 35.274
+        oz = num * 35.274
+        # kg to lbs: lbs = kg * 2.205
+        lbs = num * 2.205
+        # kg to stone: stone = kg * 0.157
+        stone = num * 0.157
+        # kg to ton: ton = kg / 902.7
+        ton = num / 907.2
+        print(f"{num} kilogram(s) is {mg:.2f} milligrams")
+        print(f"{num} kilogram(s) is {g:.2f} grams")
+        print(f"{num} kilogram(s) is {oz:.2f} ounces")
+        print(f"{num} kilogram(s) is {lbs:.6f} pounds")
+        print(f"{num} kilogram(s) is {stone:.6f} stone")
+        print(f"{num} kilogram(s) is {ton:.9f} tons")
+        print("******************************") 
+    elif unit.lower() == "stone":
+        # stone to mg: mg = stone * 6,350,290
+        mg = num * 6350290
+        # stone to g: g = stone * 6350.29
+        g = num * 6350.29
+        # stone to oz: oz = stone * 224
+        oz = num * 224
+        # stone to lbs: lbs = stone * 14
+        lbs = num * 14
+        # stone to kg: kg = stone * 6.35029
+        kg = num * 6.35029
+        # stone to ton: ton = stone / 142.9
+        ton = num / 142.9
+        print(f"{num} stone(s) is {mg:.2f} milligrams")
+        print(f"{num} stone(s) is {g:.2f} grams")
+        print(f"{num} stone(s) is {oz:.2f} ounces")
+        print(f"{num} stone(s) is {lbs:.5f} pounds")
+        print(f"{num} stone(s) is {kg:.5f} kilograms")
+        print(f"{num} stone(s) is {ton:.5f} tons")
+        print("******************************") 
+    elif unit.lower() == "ton":
+        # ton to mg: mg = ton * 907200000
+        mg = num * 907200000
+        # ton to g: g = ton * 907185
+        g = num * 907185
+        # ton to oz: oz = ton * 32000
+        oz = num * 32000
+        # ton to lbs: lbs = ton * 2000
+        lbs = num * 2000
+        # ton to kg: kg = ton * 907.185
+        kg = num * 907.185
+        # ton to stone: stone = ton * 142.857
+        stone = num * 142.857
+        print(f"{num} ton(s) is {mg:.2f} milligrams")
+        print(f"{num} ton(s) is {g:.2f} grams")
+        print(f"{num} ton(s) is {oz:.2f} ounces")
+        print(f"{num} ton(s) is {lbs:.2f} pounds")
+        print(f"{num} ton(s) is {kg:.2f} kilograms")
+        print(f"{num} ton(s) is {stone:.2f} stones")
+        print("******************************")
+    else:
+        print("Please enter a valid unit")
+
+def convert_area(num, unit):
+    if not isinstance(num, (int, float)):
+        print("Please enter a valid number")
+        return
+    
+    print("******************************")
+    if unit.lower() == "sq ft":
+        # sq ft to sq m: sq m = sq ft / 10.764
+        sq_m = num / 10.764
+        # sq ft to acre: acre = sq ft / 43560
+        acre = num / 43560
+        # sq ft to hectare: hectare = sq ft / 107639
+        hectare = num / 107639
+        # sq ft to sq km: sq km = sq ft / 1.076e+7 or sq ft / 10,763,910
+        sq_km = num / 10763910
+        # sq ft to sq mile: sq mile = sq ft / 2.788e+7 or sq ft / 27,878,400
+        sq_mile = num / 27878400
+        print(f"{num} square foot/feet is {sq_m:.6f} square meters")
+        print(f"{num} square foot/feet is {acre:.9f} acres")
+        print(f"{num} square foot/feet is {hectare:.12f} hectares")
+        print(f"{num} square foot/feet is {sq_km:.12f} square kilometers")
+        print(f"{num} square foot/feet is {sq_mile:.12f} square miles")
+        print("******************************")
+    elif unit.lower() == "sq m":
+        # sq m to sq ft: sq ft = sq m * 10.764
+        sq_ft = num * 10.764
+        # sq m to acre: acre = sq m / 4047
+        acre = num / 4047
+        # sq m to hectare: hectare = sq m / 10000
+        hectare = num / 10000
+        # sq m to sq km: sq km = sq m / 1e+6 or sq m / 1,000,000
+        sq_km = num / 1000000
+        # sq m to sq mile: sq mile = sq m / 2.59e+6 or sq m / 2,589,988
+        sq_mile = num / 2589988
+        print(f"{num} square meter(s) is {sq_ft:.6f} square feet")
+        print(f"{num} square meter(s) is {acre:.8f} acres")
+        print(f"{num} square meter(s) is {hectare:.8f} hectares")
+        print(f"{num} square meter(s) is {sq_km:.12f} square kilometers")
+        print(f"{num} square meter(s) is {sq_mile:.12f} square miles")
+        print("******************************")   
+    elif unit.lower() == "acre":
+        # acre to sq ft: sq ft = acre * 43,560
+        sq_ft = num * 43560
+        # acre to sq m: sq m = acre * 4047
+        sq_m = num * 4047
+        # acre to hectare: hectare = acre / 2.471
+        hectare = num / 2.471
+        # acre to sq km: sq km = acre / 247.105
+        sq_km = num / 247.105
+        # acre to sq mile: sq mile = acre / 640
+        sq_mile = num / 640
+        print(f"{num} acre(s) is {sq_ft:.4f} square feet")
+        print(f"{num} acre(s) is {sq_m:.4f} square meters")
+        print(f"{num} acre(s) is {hectare:.4f} hectares")
+        print(f"{num} acre(s) is {sq_km:.8f} square kilometers")
+        print(f"{num} acre(s) is {sq_mile:.8f} square miles")
+        print("******************************")
+    elif unit.lower() == "hectare":
+        # hectare to sq ft: sq ft = hectare * 107639.105
+        sq_ft = num * 107639.105
+        # hectare to sq m: sq m = hectare * 10000
+        sq_m = num * 10000
+        # hectare to acre: acre = hectare * 2.471
+        acre = num * 2.471
+        # hectare to sq km: sq km = hectare / 100
+        sq_km = num / 100
+        # hectare to sq mile: sq mile = hectare / 259
+        sq_mile = num / 259
+        print(f"{num} hectare(s) is {sq_m:.4f} square meters")
+        print(f"{num} hectare(s) is {sq_ft:.4f} square feet")
+        print(f"{num} hectare(s) is {acre:.4f} acres")
+        print(f"{num} hectare(s) is {sq_km:.4f} square kilometers")
+        print(f"{num} hectare(s) is {sq_mile:.8f} square miles")
+        print("******************************")
+    elif unit.lower() == "sq km":
+        # sq km to sq ft: sq ft = sq km * 10763910.41671
+        sq_ft = num * 10763910.41671
+        # sq km to sq m: sq m = sq km * 1e+6 or sq km * 1,000,000
+        sq_m = num * 1000000
+        # sq km to acre: acre = sq km * 247.1053814672
+        acre = num * 247.1053814672
+        # sq km to hectare: hectare = sq km * 100
+        hectare = num * 100        
+        # sq km to sq mile: sq mile = sq km / 2.59
+        sq_mile = num / 2.59
+        print(f"{num} square kilometer(s) is {sq_ft:.4f} square feet")
+        print(f"{num} square kilometer(s) is {sq_m:.4f} square meters")
+        print(f"{num} square kilometer(s) is {acre:.4f} acres")
+        print(f"{num} square kilometer(s) is {hectare:.4f} hectares")
+        print(f"{num} square kilometer(s) is {sq_mile:.4f} square miles")
+        print("******************************")
+    elif unit.lower() == "sq mile":
+        # sq mile to sq ft: sq ft = sq mile * 2.788e+7 or sq mile * 27,878,400
+        sq_ft = num * 27878400
+        # sq mile to sq m: sq m = sq mile * 2.59e+6 or sq mile * 2,589,988
+        sq_m = num * 2589988
+        # sq mile to acre: acre = sq mile * 640
+        acre = num * 640
+        # sq mile to hectare: hectare = sq mile * 258.999
+        hectare = num * 258.999
+        # sq mile to sq km: sq km = sq mile * 2.59
+        sq_km = num * 2.59
+        print(f"{num} square mile(s) is {sq_ft:.4f} square feet")
+        print(f"{num} square mile(s) is {acre:.4f} acres")
+        print(f"{num} square mile(s) is {hectare:.4f} hectares")
+        print(f"{num} square mile(s) is {sq_km:.4f} square kilometers")
+        print(f"{num} square mile(s) is {sq_m:.4f} square meters")
+        print("******************************")
+    else:
+        print("Please enter a valid unit")
 
 
 """
@@ -243,6 +502,8 @@ convert_temp(0, "F")
 convert_temp(0, "C")
 convert_temp(273.15, "K")
 
+convert_temp(1, "test")
+convert_temp("test", "F")
 convert_temp("test", "test")
 
 
@@ -259,6 +520,29 @@ convert_length(1, "test")
 convert_length("test", "mm")
 convert_length("test", "test")
 
+
+convert_weight(1, "mg")
+convert_weight(1, "g")
+convert_weight(1, "oz")
+convert_weight(1, "lbs")
+convert_weight(1, "kg")
+convert_weight(1, "stone")
+convert_weight(1, "ton")
+
+convert_weight(1, "test")
+convert_weight("test", "mg")
+convert_weight("test", "test")
+
+convert_area(1, "sq ft")
+convert_area(1, "sq m")
+convert_area(1, "acre")
+convert_area(1, "hectare")
+convert_area(1, "sq km")
+convert_area(1, "sq mile")
+
+convert_area(1, "test")
+convert_area("test", "sq mile")
+convert_area("test", "test")
 
 
 """
