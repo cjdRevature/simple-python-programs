@@ -10,33 +10,33 @@ def convert_temp(num, unit):
         print("Please enter a valid number")
         return
     
-    print("******************************")
+    print("*"*50)
     if unit.upper() == "F":
         # F to C:   C = (F - 32) * (5/9)
         celsius = (num - 32) * (5/9)
         # F to K:   K = (F - 32) * (5/9) + 273.15
         kelvin = celsius + 273.15
         # results rounded with round() function
-        print(num, "degrees F is ", round(celsius,2), "degrees C")
-        print(num, "degrees F is ", round(kelvin,2) , "K")
-        print("******************************")
+        print(num, "degree(s) Fahrenheit is ", round(celsius,2), "degrees Celsius")
+        print(num, "degree(s) Fahrenheit is ", round(kelvin,2) , "Kelvin")
+        print("*"*50)
     elif unit.upper() == "C":
         # C to F:   F = (9/5) * C + 32 or F = (1.8 * C) + 32
         fahrenheit = (1.8 * num) + 32
         # C to K:   K = C + 273.15
         kelvin = num + 273.15
         # results rounded with 'f' format specifier
-        print(f"{num} degrees C is {fahrenheit:.2f} degrees F")
-        print(f"{num} degrees C is {kelvin:.2f} K")
-        print("******************************")
+        print(f"{num} degree(s) Celsius is {fahrenheit:.2f} degrees Fahrenheit")
+        print(f"{num} degree(s) Celsius is {kelvin:.2f} Kelvin")
+        print("*"*50)
     elif unit.upper() == "K":
         # K to C:   C = K - 273.15
         celsius = num - 273.15
         # K to F:   F = (K - 273.15) * (9/5) + 32 or F = 1.8 * (K - 273.15) + 32
         fahrenheit = 1.8 * (num - 273.15) + 32
-        print(f"{num} K is {celsius:.2f} degrees C")
-        print(f"{num} K is {fahrenheit:.2f} degrees F")
-        print("******************************")
+        print(f"{num} Kelvin is {celsius:.2f} degrees Celsius")
+        print(f"{num} Kelvin is {fahrenheit:.2f} degrees Fahrenheit")
+        print("*"*50)
     # will need to add else statement to check for exception
     else:
         print("Please add a valid number/unit")
@@ -46,7 +46,7 @@ def convert_length(num, unit):
         print("Please enter a valid number")
         return
     
-    print("******************************")
+    print("*"*50)
     if unit.lower() == "mm":
         # mm to cm:    cm = mm / 10
         cm = num / 10
@@ -69,7 +69,7 @@ def convert_length(num, unit):
         print(f"{num} millimeter(s) is {yards:.4f} yards")
         print(f"{num} millimeter(s) is {km:.8f} kilometers")
         print(f"{num} millimeter(s) is {mi:.8f} miles")
-        print("******************************")  
+        print("*"*50) 
     elif unit.lower() == "cm":
         # cm to mm:    mm = cm * 10
         mm = num * 10
@@ -92,14 +92,14 @@ def convert_length(num, unit):
         print(f"{num} centimeter(s) is {yards:.4f} yards")
         print(f"{num} centimeter(s) is {km:.8f} kilometers")
         print(f"{num} centimeter(s) is {mi:.8f} miles")
-        print("******************************")
+        print("*"*50)
     elif unit.lower() == "inches":
         # inches to mm:    in * 25.4
         mm = num * 25.4
     	# inches to cm:    in * 2.54
         cm = num * 2.54        
         # inches to ft:    in / 12
-        feet = num / 3        
+        feet = num / 12        
         # inches to m:     in / 39.37
         m = num / 39.37        
         # inches to yards:  in / 36
@@ -115,7 +115,7 @@ def convert_length(num, unit):
         print(f"{num} inch(es) is {yards:.4f} yards")
         print(f"{num} inch(es) is {km:.8f} kilometers")
         print(f"{num} inch(es) is {mi:.8f} miles")
-        print("******************************")        
+        print("*"*50)        
     elif unit.lower() == "feet":
         # feet to mm: mm = ft * 304.8
         mm = num * 304.8        
@@ -138,7 +138,7 @@ def convert_length(num, unit):
         print(f"{num} foot/feet is {yards:.4f} yards")
         print(f"{num} foot/feet is {km:.8f} kilometers")
         print(f"{num} foot/feet is {mi:.8f} miles")
-        print("******************************")     
+        print("*"*50)     
     elif unit.lower() == "yard":
         # yards to mm: mm = yards * 914.4
         mm = num * 914.4        
@@ -161,7 +161,7 @@ def convert_length(num, unit):
         print(f"{num} yard(s) is {m:.4f} meters")
         print(f"{num} yard(s) is {km:.8f} kilometers")
         print(f"{num} yard(s) is {mi:.8f} miles")
-        print("******************************")   
+        print("*"*50)   
     elif unit.lower() == "m":
         # m to mm: mm = m * 1000
         mm = num * 1000
@@ -184,7 +184,7 @@ def convert_length(num, unit):
         print(f"{num} meter(s) is {yards:.4f} yards")
         print(f"{num} meter(s) is {km:.8f} kilometers")
         print(f"{num} meter(s) is {mi:.8f} miles")
-        print("******************************")
+        print("*"*50)
     elif unit.lower() == "km":
         # km to mm: mm = km * 1,000,000
         mm = num * 1000000        
@@ -207,7 +207,7 @@ def convert_length(num, unit):
         print(f"{num} kilometer(s) is {m:.4f} meters")
         print(f"{num} kilometer(s) is {yards:.4f} yards")
         print(f"{num} kilometer(s) is {mi:.6f} miles")
-        print("******************************")
+        print("*"*50)
     elif unit.lower() == "mi":
         # miles to mm: mm = mi * 1,609,344
         mm = num * 1609344        
@@ -230,7 +230,7 @@ def convert_length(num, unit):
         print(f"{num} mile(s) is {m:.4f} meters")
         print(f"{num} mile(s) is {yards:.4f} yards")
         print(f"{num} mile(s) is {km:.6f} kilometers")
-        print("******************************")
+        print("*"*50)
     else:
         print("Please enter a valid unit")
 
@@ -239,7 +239,7 @@ def convert_weight(num, unit):
         print("Please enter a valid number")
         return
     
-    print("******************************")
+    print("*"*50)
     if unit.lower() == "mg":
         # mg to g: g = mg / 1000
         g = num / 1000
@@ -259,7 +259,7 @@ def convert_weight(num, unit):
         print(f"{num} milligram(s) is {kg:.9f} kilograms")
         print(f"{num} milligram(s) is {stone:.9f} stone")
         print(f"{num} milligram(s) is {ton:.12f} tons")
-        print("******************************")
+        print("*"*50)
     elif unit.lower() == "g":
         # g to mg: mg = g * 1000
         mg = num * 1000
@@ -279,7 +279,7 @@ def convert_weight(num, unit):
         print(f"{num} gram(s) is {kg:.6f} kilograms")
         print(f"{num} gram(s) is {stone:.6f} stone")
         print(f"{num} gram(s) is {ton:.9f} tons")
-        print("******************************")     
+        print("*"*50)     
     elif unit.lower() == "oz":
         # oz to mg: mg = oz * 28349.523
         mg = num * 28349.523
@@ -299,7 +299,7 @@ def convert_weight(num, unit):
         print(f"{num} ounce(s) is {kg:.6f} kilograms")
         print(f"{num} ounce(s) is {stone:.6f} stone")
         print(f"{num} ounce(s) is {ton:.9f} tons")
-        print("******************************")  
+        print("*"*50)  
     elif unit.lower() == "lbs":
         # lbs to mg: mg = lbs * 453592
         mg = num * 453592
@@ -319,7 +319,7 @@ def convert_weight(num, unit):
         print(f"{num} pound(s) is {kg:.6f} kilograms")
         print(f"{num} pound(s) is {stone:.6f} stone")
         print(f"{num} pound(s) is {ton:.9f} tons")
-        print("******************************")
+        print("*"*50)
     elif unit.lower() == "kg":
         # kg to mg: mg = kg * 1e+6 or kg * 1,000,000
         mg = num * 1000000
@@ -339,7 +339,7 @@ def convert_weight(num, unit):
         print(f"{num} kilogram(s) is {lbs:.6f} pounds")
         print(f"{num} kilogram(s) is {stone:.6f} stone")
         print(f"{num} kilogram(s) is {ton:.9f} tons")
-        print("******************************") 
+        print("*"*50) 
     elif unit.lower() == "stone":
         # stone to mg: mg = stone * 6,350,290
         mg = num * 6350290
@@ -359,7 +359,7 @@ def convert_weight(num, unit):
         print(f"{num} stone(s) is {lbs:.5f} pounds")
         print(f"{num} stone(s) is {kg:.5f} kilograms")
         print(f"{num} stone(s) is {ton:.5f} tons")
-        print("******************************") 
+        print("*"*50) 
     elif unit.lower() == "ton":
         # ton to mg: mg = ton * 907200000
         mg = num * 907200000
@@ -379,7 +379,7 @@ def convert_weight(num, unit):
         print(f"{num} ton(s) is {lbs:.2f} pounds")
         print(f"{num} ton(s) is {kg:.2f} kilograms")
         print(f"{num} ton(s) is {stone:.2f} stones")
-        print("******************************")
+        print("*"*50)
     else:
         print("Please enter a valid unit")
 
@@ -388,7 +388,7 @@ def convert_area(num, unit):
         print("Please enter a valid number")
         return
     
-    print("******************************")
+    print("*"*50)
     if unit.lower() == "sq ft":
         # sq ft to sq m: sq m = sq ft / 10.764
         sq_m = num / 10.764
@@ -405,7 +405,7 @@ def convert_area(num, unit):
         print(f"{num} square foot/feet is {hectare:.12f} hectares")
         print(f"{num} square foot/feet is {sq_km:.12f} square kilometers")
         print(f"{num} square foot/feet is {sq_mile:.12f} square miles")
-        print("******************************")
+        print("*"*50)
     elif unit.lower() == "sq m":
         # sq m to sq ft: sq ft = sq m * 10.764
         sq_ft = num * 10.764
@@ -422,7 +422,7 @@ def convert_area(num, unit):
         print(f"{num} square meter(s) is {hectare:.8f} hectares")
         print(f"{num} square meter(s) is {sq_km:.12f} square kilometers")
         print(f"{num} square meter(s) is {sq_mile:.12f} square miles")
-        print("******************************")   
+        print("*"*50)   
     elif unit.lower() == "acre":
         # acre to sq ft: sq ft = acre * 43,560
         sq_ft = num * 43560
@@ -439,7 +439,7 @@ def convert_area(num, unit):
         print(f"{num} acre(s) is {hectare:.4f} hectares")
         print(f"{num} acre(s) is {sq_km:.8f} square kilometers")
         print(f"{num} acre(s) is {sq_mile:.8f} square miles")
-        print("******************************")
+        print("*"*50)
     elif unit.lower() == "hectare":
         # hectare to sq ft: sq ft = hectare * 107639.105
         sq_ft = num * 107639.105
@@ -456,7 +456,7 @@ def convert_area(num, unit):
         print(f"{num} hectare(s) is {acre:.4f} acres")
         print(f"{num} hectare(s) is {sq_km:.4f} square kilometers")
         print(f"{num} hectare(s) is {sq_mile:.8f} square miles")
-        print("******************************")
+        print("*"*50)
     elif unit.lower() == "sq km":
         # sq km to sq ft: sq ft = sq km * 10763910.41671
         sq_ft = num * 10763910.41671
@@ -473,7 +473,7 @@ def convert_area(num, unit):
         print(f"{num} square kilometer(s) is {acre:.4f} acres")
         print(f"{num} square kilometer(s) is {hectare:.4f} hectares")
         print(f"{num} square kilometer(s) is {sq_mile:.4f} square miles")
-        print("******************************")
+        print("*"*50)
     elif unit.lower() == "sq mile":
         # sq mile to sq ft: sq ft = sq mile * 2.788e+7 or sq mile * 27,878,400
         sq_ft = num * 27878400
@@ -490,7 +490,7 @@ def convert_area(num, unit):
         print(f"{num} square mile(s) is {hectare:.4f} hectares")
         print(f"{num} square mile(s) is {sq_km:.4f} square kilometers")
         print(f"{num} square mile(s) is {sq_m:.4f} square meters")
-        print("******************************")
+        print("*"*50)
     else:
         print("Please enter a valid unit")
 
