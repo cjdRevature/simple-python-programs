@@ -496,6 +496,18 @@ def convert_area(num, unit):
 
 
 """
+
+def convert_capacity:
+    
+def convert_currency:
+    
+def convert_storage:
+    
+def convert_time:
+    
+    
+    
+
 # test data
 
 convert_temp(0, "F")
