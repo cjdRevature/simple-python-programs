@@ -493,6 +493,100 @@ def convert_area(num, unit):
         print("*"*50)
     else:
         print("Please enter a valid unit")
+        
+def convert_currency(num, unit):
+    if not isinstance(num, (int, float)):
+        print("Please enter a valid number")
+        return
+
+    print("*"*50)
+    
+    # currency conversion rates as of 4/15/2023
+    if unit.lower() == "usd":
+        euro = num * 0.83
+        yen = num * 110.32
+        pound = num * 0.72
+        aud = num * 1.25
+        cad = num * 1.25
+        franc = num * 0.91
+        renminbi = num * 6.38
+        baht = num * 31.35
+        mxn = num * 19.95
+        inr = num * 75.21
+        
+        print(f"{num} US dollar(s) is {euro:.2f} Euros")
+        print(f"{num} US dollar(s) is {yen:.2f} Japanese yen")
+        print(f"{num} US dollar(s) is {pound:.2f} British pounds")
+        print(f"{num} US dollar(s) is {aud:.2f} Australian dollars")
+        print(f"{num} US dollar(s) is {cad:.2f} Canadian dollars")
+        print(f"{num} US dollar(s) is {franc:.2f} Swiss francs")
+        print(f"{num} US dollar(s) is {renminbi:.2f} Chinese renminbis")
+        print(f"{num} US dollar(s) is {baht:.2f} Thai baht")
+        print(f"{num} US dollar(s) is {mxn:.2f} Mexican pesos")
+        print(f"{num} US dollar(s) is {inr:.2f} Indian rupees")
+        
+    elif unit.lower() == "euro":
+        usd = num * 1.21
+        yen = num * 128.26
+        pound = num * 0.84
+        aud = num * 1.45
+        cad = num * 1.45
+        franc = num * 1.06
+        renminbi = num * 7.41
+        baht = num * 36.45
+        mxn = num * 23.20
+        inr = num * 87.28
+    
+        print(f"{num} Euro(s) is {usd:.2f} US dollars")
+        print(f"{num} Euro(s) is {yen:.2f} Japanese yen")
+        print(f"{num} Euro(s) is {pound:.2f} British pounds")
+        print(f"{num} Euro(s) is {aud:.2f} Australian dollars")
+        print(f"{num} Euro(s) is {cad:.2f} Canadian dollars")
+        print(f"{num} Euro(s) is {franc:.2f} Swiss francs")
+        print(f"{num} Euro(s) is {renminbi:.2f} Chinese renminbis")
+        print(f"{num} Euro(s) is {baht:.2f} Thai baht")
+        print(f"{num} Euro(s) is {mxn:.2f} Mexican pesos")
+        print(f"{num} Euro(s) is {inr:.2f} Indian rupees")
+        
+    elif unit.lower() == "yen":
+        euro = num / 132.68
+        usd = num / 110.32
+        pound = num / 153.76
+        aud = num / 88.26
+        cad = num / 87.45
+        franc = num / 120.7
+        renminbi = num / 17.28
+        baht = num / 3.58
+        mxn = num / 5.53
+        inr = num / 1.49
+    
+        print(f"{num} Japanese yen(s) is {euro:.2f} Euros")
+        print(f"{num} Japanese yen(s) is {usd:.2f} US dollars")
+        print(f"{num} Japanese yen(s) is {pound:.2f} British pounds")
+        print(f"{num} Japanese yen(s) is {aud:.2f} Australian dollars")
+        print(f"{num} Japanese yen(s) is {cad:.2f} Canadian dollars")
+        print(f"{num} Japanese yen(s) is {franc:.2f} Swiss francs")
+        print(f"{num} Japanese yen(s) is {renminbi:.2f} Chinese renminbis")
+        print(f"{num} Japanese yen(s) is {baht:.2f} Thai baht")
+        print(f"{num} Japanese yen(s) is {mxn:.2f} Mexican pesos")
+        print(f"{num} Japanese yen(s) is {inr:.2f} Indian rupees")
+
+        
+    
+
+
+
+    # Add more conversion rates for other currencies here
+
+    else:
+        print("Currency not supported")
+
+    print("*"*50)
+
+
+convert_currency(1, "usd")
+convert_currency(1, "euro")
+convert_currency(1, "yen")
 
 
 """

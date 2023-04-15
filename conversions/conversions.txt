@@ -172,7 +172,45 @@ area: sq mile, acre, sq km, hectares, sq ft, sq m
 
 capacity: gallon, quarts, pints, cups, liters, ml
 
-currency:
+currency: US dollar, Euro, Japanese yen, Pound sterling,
+	  Australian dollar, Canadian dollar, Swiss franc,
+	  Chinese renminbi, Hong Kong dollar, New Zealand dollar,
+	  Thai baht, Mexican peso, Indian rupee
+
+        	euro = usd * 0.83
+        	yen = usd * 110.32
+        	pound = usd * 0.72
+        	aud = usd * 1.25
+        	cad = usd * 1.25
+        	franc = usd * 0.91
+        	renminbi = usd * 6.38
+        	baht = usd * 31.35
+        	mxn = usd * 19.95
+        	inr = usd * 75.21
+
+        	usd = euro * 1.21
+        	yen = euro * 128.26
+        	pound = euro * 0.84
+        	aud = euro * 1.45
+        	cad = euro * 1.45
+        	franc = euro * 1.06
+        	renminbi = euro * 7.41
+        	baht = euro * 36.45
+        	mxn = euro * 23.20
+        	inr = euro * 87.28
+
+        	euro = yen / 132.68
+        	usd = yen / 110.32
+        	pound = yen / 153.76
+        	aud = yen / 88.26
+        	cad = yen / 87.45
+        	franc = yen / 120.7
+        	renminbi = yen / 17.28
+        	baht = yen / 3.58
+        	mxn = yen / 5.53
+        	inr = yen / 1.49
+
+
 
 storage:
 
